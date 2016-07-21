@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TextView
+            android:paddingTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="San diego"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60dp"
+            android:text="10"
+            android:textColor="#FFFFFF"
+            android:id="@+id/statics"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Excllent"
+            android:background="@drawable/green_round_corner"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:id="@+id/state"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:src="@drawable/weather_cloud"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="10℃"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/temp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monitoring Data"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:padding="1dp"
+        ></LinearLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginTop="10dp"
+        >
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PM2.5"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+
+                        />
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="cm/²"
+                            android:textColor="#FFFFFF"
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textSize="30dp"
+                    android:id="@+id/data_pm2.5"
+                    android:textColor="#FFFFFF"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+
+                        />
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="cm/²"
+                            android:textColor="#FFFFFF"
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textSize="30dp"
+                    android:id="@+id/data_no2"
+                    android:textColor="#FFFFFF"
+                    />
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+            <ProgressBar
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#FFFFFF"
+                android:padding="1dp"
+                android:id="@+id/graph_pm2.5"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+            </ProgressBar>
+
+            <ProgressBar
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#FFFFFF"
+                android:padding="1dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/graph_no2"
+                >
+            </ProgressBar>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CO2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+
+                        />
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="cm/²"
+                            android:textColor="#FFFFFF"
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textSize="30dp"
+                    android:id="@+id/data_co2"
+                    android:textColor="#FFFFFF"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CO"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+
+                        />
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="cm/²"
+                            android:textColor="#FFFFFF"
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textSize="30dp"
+                    android:id="@+id/data_co"
+                    android:textColor="#FFFFFF"
+                    />
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="10dp"
+            >
+            <ProgressBar
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#FFFFFF"
+                android:padding="1dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/graph_co2"
+                >
+            </ProgressBar>
+
+            <ProgressBar
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#FFFFFF"
+                android:padding="1dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/graph_co"
+                >
+            </ProgressBar>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+
+                        />
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="cm/²"
+                            android:textColor="#FFFFFF"
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textSize="30dp"
+                    android:id="@+id/data_o3"
+                    android:textColor="#FFFFFF"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SO2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+
+                        />
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="cm/²"
+                            android:textColor="#FFFFFF"
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textSize="30dp"
+                    android:id="@+id/data_so2"
+                    android:textColor="#FFFFFF"
+                    />
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+            <ProgressBar
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#FFFFFF"
+                android:padding="1dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/graph_o3"
+               >
+            </ProgressBar>
+
+            <ProgressBar
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#FFFFFF"
+                android:padding="1dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/graph_so2"
+                />
+
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Advice for Health"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:padding="1dp"
+        ></LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/green_circle"
+                        android:layout_gravity="center"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/jogging"
+                        android:layout_gravity="center"
+                        />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Outdoor Sports"
+                        android:textColor="#8c8c8c"
+                        android:textSize="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sutiable"
+                        android:textSize="15dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                >
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/green_circle"
+                        android:layout_gravity="center"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/jogging"
+                        android:layout_gravity="center"
+                        />
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Outdoor Sports"
+                        android:textColor="#8c8c8c"
+                        android:textSize="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sutiable"
+                        android:textSize="15dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
